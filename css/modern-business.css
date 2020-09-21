@@ -61,7 +61,7 @@ width:1150px;
 .image-container:after{
     position:absolute;
     content: "";
-    height: 42%;
+    height: 43%;
     width: 100%;
     top: 0;
     left: 1;
