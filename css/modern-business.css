@@ -52,6 +52,7 @@ width:1150px;
     position: relative;
     width: 100%;
     margin:  5 %15% 0 15%;
+ 
 }
 
 .image-container img{
@@ -65,12 +66,12 @@ width:1150px;
     width: 100%;
     top: 0;
     left: 1;
-    background: -webkit-linear-gradient(bottom, rgba(190, 12, 197, 0.6) 0%, rgba(16, 12, 0, 0.2) 0%, rgba(123, 198, 204, 0.2) 30%);
+    background: -webkit-linear-gradient(bottom, rgba(190, 12, 197, 0.2) 60%, rgba(16, 12, 0, 0.2) 10%, rgba(123, 198, 204, 0.2) 110%);
     background: -o-linear-gradient(bottom, rgba(190, 147, 197, 0.6) 0%, rgba(156, 172, 200, 0.35) 50%, rgba(123, 198, 204, 0.61) 50%);
     background: -ms-linear-gradient(bottom, rgba(190, 147, 197, 0.6) 0%, rgba(156, 172, 200, 0.35) 100%, rgba(123, 198, 204, 0.61) 50%);
     background: -moz-linear-gradient(bottom, rgba(190, 147, 197, 0.6) 0%, rgba(156, 172, 200, 0.35) 100%, rgba(123, 198, 204, 0.6]1) 50%);
-   background:linear-gradient(to bottom, rgba(1, 1, 0, 0) 50%,rgb(110,100,0) 70%),rgb(100,0,112) 70%), url("H:\int1\asta\asta\img\astagiri-homestay.jpg");
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 50%, transparent 0%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 5%, transparent 55%, transparent); 
+    background:linear-gradient(to bottom, rgba(1, 1, 1, 0) 10%,rgb(112,112,11) 130%), url("");
+		
 }
-
-
-
+	
