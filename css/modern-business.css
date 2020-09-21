@@ -51,21 +51,21 @@ width:1150px;
     height: auto;
     position: relative;
     width: 100%;
-    margin:  15% 5% 15%;
+    margin:  5 %15% 0 15%;
 }
 
 .image-container img{
-    width: 100%;
+    width: 110%;
 }
 
 .image-container:after{
     position:absolute;
     content: "";
-    height: 90%;
+    height: 41%;
     width: 100%;
     top: 0;
     left: 1;
-    background: -webkit-linear-gradient(bottom, rgba(190, 12, 197, 0.6) 0%, rgba(16, 12, 200, 0.5) 0%, rgba(123, 198, 204, 0.1) 50%);
+    background: -webkit-linear-gradient(bottom, rgba(190, 12, 197, 0.6) 0%, rgba(16, 12, 0, 0.2) 0%, rgba(123, 198, 204, 0.2) 30%);
     background: -o-linear-gradient(bottom, rgba(190, 147, 197, 0.6) 0%, rgba(156, 172, 200, 0.35) 50%, rgba(123, 198, 204, 0.61) 50%);
     background: -ms-linear-gradient(bottom, rgba(190, 147, 197, 0.6) 0%, rgba(156, 172, 200, 0.35) 100%, rgba(123, 198, 204, 0.61) 50%);
     background: -moz-linear-gradient(bottom, rgba(190, 147, 197, 0.6) 0%, rgba(156, 172, 200, 0.35) 100%, rgba(123, 198, 204, 0.6]1) 50%);
