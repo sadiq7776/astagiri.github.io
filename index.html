@@ -138,7 +138,7 @@
 	 <div class="image-container">
 
 <div class="row">
-  <div class="col-lg-6">
+  <div class="col-md-6">
         <img class="img-fluid rounded" src="img/ettina-buja.jpg" alt="">
       </div>
 	     
@@ -147,8 +147,8 @@
         <br><p><strong>With the soft colours of green landscapes gives the place the needed charm for attracting the tourists. Our homestay hosts will make your tour memorable by giving detailed information of every places.</strong></p>
         <p>Number of attracting places nearby Astagirihomestay like Dharmastala, ettinabuja, Devaramane, Mullaiyana Giri, Kuduremuka, Charmadi Ghats, Manjarabad fort, Sakaleshpur Tee estates and shetty halli many places are waiting for your visit.</p>
         <br>
-	<br>
-	      <br>
+		   <br>
+		   <br>
         <a class="btn btn-lg btn-secondary btn-block" href="Chikmagalur-tourist-Places-with-distance.html">View more</a><br>
       </div>
 	   </div>
@@ -175,13 +175,44 @@
 <!-- Call to Action Section -->
    <section  style="color: green">
     <div class="container">
-    <div class="row mb-4">
+    <div class="row mb-6">
       <div class="col-md-8">
         <h2><strong>GET 30% DISCOUNT.</strong></h2>
       </div>
-      <div class="col-md-4">
-        <a class="btn btn-lg btn-secondary btn-block" href="homestay-contact-details.html">BOOK NOW</a>
+      <div class="row">
+      <div class="col-lg-12 mb-8">
+        <h3>Send us a Message</h3>
+        <form id="submit-form" action="thanks.html" >
+          <div class="control-group form-group">
+            <div class="controls">
+              <label for="fname"> NAME</label>
+              <input type="text" id="fname" name="name" placeholder="Your name.." class="form-control"	required data-validation-required-message="Please enter your name." >
+              <p class="help-block"></p>
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label for="lname">PHONE</label>
+              <input type="text" id="phone" name="phone" placeholder="Mobile.." class="form-control" required pattern="[6-9]{1}[0-9]{9}">
+            
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label for="email">EMAIL:</label>
+				<input type="text" id="email" name="email" placeholder="Email.." class="form-control" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            </div>
+          </div>
+          <div class="control-group form-group">
+            
+          </div>
+          <div id="success"></div>
+          <!-- For success/fail messages -->
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+        </form>
       </div>
+
+  </div>
     </div></div>
     </section>
   <!-- Footer -->
@@ -304,6 +335,27 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbx0YEHjn0e-QofjpoPSKpTZMFgSlSmhwy7IZWdz/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    //window.location.reload()
+                    window.location="thamk.html"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+  
 
 </body>
 
